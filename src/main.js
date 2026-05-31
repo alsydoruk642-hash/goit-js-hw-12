@@ -54,7 +54,11 @@ async function handleSubmit(event) {
 
     const totalPages = Math.ceil(data.totalHits / PER_PAGE);
 
-    if (currentPage < totalPages) {
+    if (currentPage >= totalPages) {
+      iziToast.info({
+        message: "We're sorry, but you've reached the end of search results.",
+      });
+    } else {
       showLoadMoreBtn();
     }
   } catch (error) {
