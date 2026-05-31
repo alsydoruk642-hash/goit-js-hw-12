@@ -1,21 +1,14 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-RwkfPsZF.css">
-  </head>
-  <body>
-    <!doctype html>
+  <!doctype html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Vanilla App Template</title>
+        <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
+        <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-DcHCnVjq.js">
+        <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-DumFYO8Z.css">
+        <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-B1E2nITI.css">
       </head>
       <body>
         <main>
@@ -32,9 +25,13 @@
             <button class="search-button" type="submit">Search</button>
           </form>
 
-          <span class="loader"></span>
-
           <ul class="gallery"></ul>
+
+          <button class="load-more hidden load">Load more</button>
+
+          <div class="loader">
+  Loading images, please wait<span class="dots"></span>
+</div>
         </main>
 
       </body>
